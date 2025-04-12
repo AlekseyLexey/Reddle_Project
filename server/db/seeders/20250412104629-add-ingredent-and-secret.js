@@ -79,237 +79,284 @@ module.exports = {
       {
         name: "Порошок лунного камня",
         description: "Придаёт зелью блеск и мягкую энергию",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "dust of moonstone.webp"
       },
       {
         name: "Слезы феникса",
         description: "Усиливают лечебные свойства",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "phoenix_tears.webp"
       },
       {
         name: "Рог единорога",
         description: "Создаёт сильные защитные зелья",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "unicorn_horn_dust.webp"
       },
       {
         name: "Колючки дикобраза",
         description: "Добавляют защитные свойства",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "needle_porcupine.webp"
       },
       {
         name: "Драконья кровь",
         description: "Универсальный мощный магический эффект",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "dragon_blood.webp"
       },
       {
         name: "Чешуйки саламандры",
         description: "Усиливают свойства зелий, связанных с огненной магией",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "salamander_scale.webp"
       },
       {
         name: "Клыки змеи",
         description: "Используются в ядовитых или антидотных зельях",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "snake-fang.webp"
       },
       {
         name: "Пучок мандрагоры",
         description: "Ключевой компонент для оживления или исцеления",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "mandragoras_bunch.webp"
       },
       {
         name: "Зуб базилиска",
         description: "Мощный, но опасный компонент",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "basilisk_tooth_dust.webp"
       },
       {
         name: "Лепестки ночного цветка",
         description: "Усиливают магию луны",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "petal-moonflower.webp"
       },
       {
         name: "Туманное сало",
         description: "Используется для зелий невидимости и туманности",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "foggy-lard.webp"
       },
       {
         name: "Шерсть чёрного кота",
         description: "Используется для зелий удачи и оберегов",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "black-cat-fur.webp"
       },
       {
         name: "Песок с берегов Грета",
         description: "Влияет на сновидения и магическую память",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "sand_Grets_coast.webp"
       },
       {
         name: "Корень асфоделя",
         description: "Используется в оборотных и успокаивающих зельях",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "asphodels_root.webp"
       },
       {
         name: "Листья дикого наперстянника",
         description: "Добавляют зелью волшебную стойкость",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "wild-foxglove-leaves.webp"
       },
       {
         name: "Болотный мох",
         description: "Усиливает свойства зелий невидимости",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "marsh-moss.webp"
       },
       {
         name: "Плоды омелы",
         description: "Используются для зелий предсказания",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "omellas-fetus.webp"
       },
       {
         name: "Цветы лунной лилии",
         description: "Используются для зелий сна и спокойствия",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "moon-lilie-flowers.webp"
       },
       {
         name: "Порошок слизи ночного шершня",
         description: "Силит зелья и замедляет действие",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "night-hornet-slime-powder.webp"
       },
       {
         name: "Листья ночной сирени",
         description: "Используются для зельев, связанных с умиротворением",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "night-lilac-bush-leaf.webp"
       },
       {
         name: "Сок из яблок Сириуса",
         description: "Применяется для зелий любви",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "sirius-apple-juice.webp"
       },
       {
         name: "Мох паучьего дерева",
         description: "Применяется в зелях для излечения боли",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "spider-tree-moss.webp"
       },
       {
         name: "Корень водяной феи",
         description: "Ускоряет действие зелий",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "water-fairy-root.webp"
       },
       {
         name: "Листья зеленого дуба",
         description: "Используются в защитных зельях",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "green-oak-leaves.webp"
       },
       {
         name: "Цветы белой магнолии",
         description: "Для зелий спокойствия и восстановления",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "white-magnoly-flowers.webp"
       },
       {
         name: "Эссенция очного яблока",
         description: "Используется в тёмных и сложных зельях",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "eye-apple-essence.webp"
       },
       {
         name: "Сок хищного дерева",
         description: "Для зелий ловкости и силы",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "wild-tree-juice.webp"
       },
       {
         name: "Пыльца фей",
         description: "Добавляет легкость и ускорение",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "fairy-dust.webp"
       },
       {
         name: "Зола флоббер-червя",
         description: "Стабилизирует зелье",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "flobber-worm-ash.webp"
       },
       {
         name: "Жидкость из глаз жабы",
         description: "Используется для антидотов и защиты от магии",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "liqiud-the-yeyes-of-a-toad.webp"
       },
       {
         name: "Эссенция ночного дождя",
         description: "Усиливает магию луны",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "night_rain-essence.webp"
       },
       {
         name: "Кровь огненного тролля",
         description: "Для зелий огненной магии",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "blood-of-the-fire-troll.webp"
       },
       {
         name: "Экстракт из кракена",
         description: "Добавляет мощные свойства воде",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "extract-from-the-kraken.webp"
       },
       {
         name: "Сироп с паучьей нити",
         description: "Используется в зелиях ловкости и силы",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "spider-silk-syrup.webp"
       },
       {
         name: "Проклятая кровь вампира",
         description: "Для зелий бессмертия или проклятий",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "cursed-vampires-blood.webp"
       },
       {
         name: "Молоко медовой ночи",
         description: "Используется для зелий вечного сна",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "milk-of-the-honey-night.webp"
       },
       {
         name: "Волос единорога",
         description: "Символ чистоты, используется в зелиях добра",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "unicorns-hair.webp"
       },
       {
         name: "Паутинка акромантула",
         description: "Для вязких зелий или ловушек",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "acromatuls-net.webp"
       },
       {
         name: "Капля дождя, собранного в полнолуние",
         description: "Добавляет магическую энергию",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "raindrop-collected-at-the-full-moon.webp"
       },
       {
         name: "Кусочек звёздного света",
         description: "Для самых таинственных зелий",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "piece-of-starlight.webp"
       },
       {
         name: "Коготь гриффона",
         description: "Добавляет силы и ярости зелью",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "griffins-claw.webp"
       },
       {
         name: "Листок устричного дерева",
         description: "Для зелий защиты от магических воздействий",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "leaf-of-the-oysters-tree.webp"
       },
       {
         name: "Шерстяное перо горного орла",
         description: "Применяется для зелий скорости и ловкости",
-        danger_level: "низкий"
+        danger_level: "низкий",
+        image: "feather-of-the-mountain-eagle.webp"
       },
       {
         name: "Молоко летучей мыши",
         description: "Используется в зельях невидимости",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "bats-milk.webp"
       },
       {
         name: "Глаз ночной совы",
         description: "Для усиления магии зрения",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "eye-of-the-night-owl.webp"
       },
       {
         name: "Слизь подземных червей",
         description: "Для зелий подземных путешествий",
-        danger_level: "средний"
+        danger_level: "средний",
+        image: "slimes-of-underground-worms.webp"
       },
       {
         name: "Клыки диких псов",
         description: "Добавляют силу и бешенство",
-        danger_level: "высокий"
+        danger_level: "высокий",
+        image: "fang-of-wild-dogs.webp"
       }
     ]);
     await queryInterface.bulkInsert("Secret_Ingredients", [

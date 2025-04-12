@@ -18,6 +18,9 @@ module.exports = {
       danger_level: {
         type: Sequelize.STRING
       },
+      image: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         defaultValue: Sequelize.fn('NOW'),
         allowNull: false,
