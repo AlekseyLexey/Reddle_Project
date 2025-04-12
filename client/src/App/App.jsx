@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PotionsPage from '../pages/PotionsPage'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
-    ></div>
+    ><PotionsPage /></div>
   );
 }
 
