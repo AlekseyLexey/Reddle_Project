@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Secret_Ingredients', {
+    await queryInterface.createTable("Secret_Ingredients", {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -10,22 +10,32 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       secret_id: {
-            type: Sequelize.INTEGER,
-            references: {
-              model: 'Secrets',
-              key: 'id'
-            }
-          },
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Secrets",
+          key: "id"
+        }
+      },
       ingredient_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Ingredients',
-          key: 'id'
+          model: "Ingredients",
+          key: "id"
         }
+      },
+      createdAt: {
+        defaultValue: new Date(),
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        defaultValue: new Date(),
+        allowNull: false,
+        type: Sequelize.DATE
       }
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Secret_Ingredients');
+    await queryInterface.dropTable("Secret_Ingredients");
   }
 };
