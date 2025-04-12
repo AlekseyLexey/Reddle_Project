@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import QuestionsPotionPage from "../pages/QuestionsPotionPage";
+
 function App() {
   return (
     <div
@@ -10,9 +12,10 @@ function App() {
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
-    ></div>
+    >
+      <QuestionsPotionPage />
+    </div>
   );
 }
 
 export default App;
-
