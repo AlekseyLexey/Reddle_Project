@@ -1,21 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import secrets from "../../../secrets.json";
+import fetchingData from "../services/api";
 
 function PotionsPage() {
-  const [potions, setPotions] = useState([
-    ...secrets.simple_riddles,
-    ...secrets.medium_riddles,
-    ...secrets.hard_riddles
-  ]);
-  console.log(potions);
+  const [potions, setPotions] = useState([]);
+
+  useEffect(() => {
+    fetchingData("/api/secrets").then(setPotions);
+  }, []);
 
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
       {potions.map((el, index) => {
         return (
-          <Link to={`/riddle/${index}`} key={index}>
+          <Link to={`/riddle/${index + 1}`} key={index}>
             <img
               src={`potion-images/${el.image}`}
               alt="potion"
