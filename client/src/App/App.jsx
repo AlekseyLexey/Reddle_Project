@@ -1,9 +1,18 @@
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <div
+      style={{
+        background: "url('/back.webp')",
+        minHeight: "100vh",
+        minWidth: "100vw",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+    ></div>
+  );
 }
 
 export default App;
+
