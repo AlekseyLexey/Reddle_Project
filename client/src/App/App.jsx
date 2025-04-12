@@ -1,6 +1,8 @@
 import { useState } from "react";
 import PotionsPage from '../pages/PotionsPage'
 
+import QuestionsPotionPage from "../pages/QuestionsPotionPage";
+
 function App() {
   return (
     <div
@@ -12,8 +14,11 @@ function App() {
         backgroundPosition: "center"
       }}
     ><PotionsPage /></div>
+    
+      <QuestionsPotionPage />
+    </div>
+ dev
   );
 }
 
 export default App;
-
