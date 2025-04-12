@@ -15,11 +15,12 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^24.1.0",
-    "sequelize-cli": "^6.6.2",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "sequelize-cli": "^6.6.2"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "express": "^5.1.0",
     "has-getter": "^1.0.0",
     "pg": "^8.14.1",
     "pg-hstore": "^2.3.4",
