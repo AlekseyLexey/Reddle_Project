@@ -9,42 +9,56 @@ import {
   Box
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import potionsData from "../../../secrets.json";
-import ingredients from "../../../ingredients.json";
+import fetchingData from "../services/api";
 
 const QuestionsPotionPage = () => {
   const [answers, setAnswers] = useState([]);
+  const [potion, setPotion] = useState(null);
+  const [allIngredients, setIngredients] = useState([]);
   const [isSuccess, setSuccess] = useState(null);
+
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const { hard_riddles, medium_riddles, simple_riddles } = potionsData;
-  const allRiddles = [...simple_riddles, ...medium_riddles, ...hard_riddles];
-  const data = ingredients.ingredients;
-  const allIngredients = [
-    ...data.liquids_and_powders,
-    ...data.magical_ingredients,
-    ...data.plant_based_ingredients,
-    ...data.unusual_additions
-  ];
+  useEffect(() => {
+    fetchingData(`/api/secrets/${id}`).then(
+      ({ image, riddle, ingredients }) => {
+        const newData = {
+          image,
+          riddle,
+          answer: ingredients.map(({ name }) => name)
+        };
+        setPotion(newData);
+      }
+    );
+  }, []);
 
-  const potion = allRiddles[id];
+  useEffect(() => {
+    fetchingData(`/api/ingredients`).then(setIngredients);
+  }, []);
+
+  if (potion) {
+    console.log("Правельные ответы", potion.answer);
+  }
+
+  useEffect(() => {
+    if (potion) {
+      if (potion.answer.length === answers.length) {
+        if (
+          JSON.stringify(potion.answer.sort()).toLowerCase() ===
+          JSON.stringify(answers.sort()).toLowerCase()
+        ) {
+          setSuccess("Верно");
+        } else {
+          setSuccess("Не верно");
+        }
+      }
+    }
+  }, [answers]);
 
   if (!potion) {
     return <Typography variant="h2">Зелье не найдено</Typography>;
   }
-  useEffect(() => {
-    if (potion.answer.length === answers.length) {
-      if (
-        JSON.stringify(potion.answer.sort()).toLowerCase() ===
-        JSON.stringify(answers.sort()).toLowerCase()
-      ) {
-        setSuccess("Верно");
-      } else {
-        setSuccess("Не верно");
-      }
-    }
-  }, [answers]);
 
   return (
     <>
@@ -132,7 +146,7 @@ const QuestionsPotionPage = () => {
             К сожалению нет(((
           </Typography>
           <img
-            src="failPotion.png"
+            src="/failPotion.png"
             alt="FailImg"
             sx={{ marginTop: "20px", maxWidth: "100%" }}
           />

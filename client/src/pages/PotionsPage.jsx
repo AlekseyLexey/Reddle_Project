@@ -6,16 +6,14 @@ function PotionsPage() {
   const [potions, setPotions] = useState([]);
 
   useEffect(() => {
-    fetchingData("api/secrets").then(setPotions);
+    fetchingData("/api/secrets").then(setPotions);
   }, []);
-
-  console.log(potions);
 
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
       {potions.map((el, index) => {
         return (
-          <Link to={`/riddle/${index}`} key={index}>
+          <Link to={`/riddle/${index + 1}`} key={index}>
             <img
               src={`potion-images/${el.image}`}
               alt="potion"

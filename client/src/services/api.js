@@ -1,7 +1,11 @@
 export default async function fetchingData(url) {
-  const response = await fetch(url);
+  try {
+    const response = await fetch(url);
 
-  const data = await response.json();
+    const data = await response.json();
 
-  return data;
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
