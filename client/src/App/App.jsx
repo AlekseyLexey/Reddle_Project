@@ -15,7 +15,7 @@ function App() {
       }}
     >
       <PotionsPage />
-      <QuestionsPotionPage />
+      {/* <QuestionsPotionPage /> */}
     </div>
   );
 }
