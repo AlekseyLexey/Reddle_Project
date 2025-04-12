@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PotionsPage from '../pages/PotionsPage'
+import PotionsPage from "../pages/PotionsPage";
 
 import QuestionsPotionPage from "../pages/QuestionsPotionPage";
 
@@ -13,11 +13,10 @@ function App() {
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
-    ><PotionsPage /></div>
-    
+    >
+      <PotionsPage />
       <QuestionsPotionPage />
     </div>
- dev
   );
 }
 
