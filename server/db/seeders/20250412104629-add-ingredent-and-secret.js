@@ -362,82 +362,82 @@ module.exports = {
     await queryInterface.bulkInsert("Secret_Ingredients", [
       /* Potion of Luck */
       { secret_id: 1, ingredient_id: 12 }, // шерсть чёрного кота
-      { secret_id: 1, ingredient_id: 23 }, // пыльца фей
-      { secret_id: 1, ingredient_id: 21 }, // листья зеленого дуба
-      { secret_id: 1, ingredient_id: 33 }, // капля дождя в полнолуние
+      { secret_id: 1, ingredient_id: 28 }, // пыльца фей
+      { secret_id: 1, ingredient_id: 24 }, // листья зеленого дуба
+      { secret_id: 1, ingredient_id: 39 }, // капля дождя в полнолуние
 
       /* Potion of Tranquility */
-      { secret_id: 2, ingredient_id: 22 }, // цветы белой магнолии
-      { secret_id: 2, ingredient_id: 17 }, // листья ночной сирени
-      { secret_id: 2, ingredient_id: 15 }, // цветы лунной лилии
-      { secret_id: 2, ingredient_id: 18 }, // сок из яблок Сириуса
+      { secret_id: 2, ingredient_id: 25 }, // цветы белой магнолии
+      { secret_id: 2, ingredient_id: 20 }, // листья ночной сирени
+      { secret_id: 2, ingredient_id: 18 }, // цветы лунной лилии
+      { secret_id: 2, ingredient_id: 21 }, // сок из яблок Сириуса
 
       /* Potion of Invisibility */
       { secret_id: 3, ingredient_id: 11 }, // туманное сало
-      { secret_id: 3, ingredient_id: 28 }, // молоко летучей мыши
-      { secret_id: 3, ingredient_id: 13 }, // болотный мох
+      { secret_id: 3, ingredient_id: 44 }, // молоко летучей мыши
+      { secret_id: 3, ingredient_id: 16 }, // болотный мох
       { secret_id: 3, ingredient_id: 8 }, // пучок мандрагоры
 
       /* Potion of Warding */
       { secret_id: 4, ingredient_id: 3 }, // рог единорога
-      { secret_id: 4, ingredient_id: 14 }, // листья дикого наперстянника
+      { secret_id: 4, ingredient_id: 15 }, // листья дикого наперстянника
       { secret_id: 4, ingredient_id: 4 }, // колючки дикобраза
-      { secret_id: 4, ingredient_id: 27 }, // шерстяное перо горного орла
+      { secret_id: 4, ingredient_id: 43 }, // шерстяное перо горного орла
 
       /* Potion of Love */
-      { secret_id: 5, ingredient_id: 18 }, // сок из яблок Сириуса
-      { secret_id: 5, ingredient_id: 22 }, // цветы белой магнолии
-      { secret_id: 5, ingredient_id: 19 }, // мох паучьего дерева
-      { secret_id: 5, ingredient_id: 31 }, // волос единорога
+      { secret_id: 5, ingredient_id: 21 }, // сок из яблок Сириуса
+      { secret_id: 5, ingredient_id: 25 }, // цветы белой магнолии
+      { secret_id: 5, ingredient_id: 22 }, // мох паучьего дерева
+      { secret_id: 5, ingredient_id: 37 }, // волос единорога
 
       /* Potion of Flame */
       { secret_id: 6, ingredient_id: 6 }, // чешуйки саламандры
-      { secret_id: 6, ingredient_id: 7 }, // кровь огненного тролля
-      { secret_id: 6, ingredient_id: 14 }, // листья дикого наперстянника
-      { secret_id: 6, ingredient_id: 34 }, // кусочек звёздного света
-      { secret_id: 6, ingredient_id: 1 }, // корень асфоделя
+      { secret_id: 6, ingredient_id: 32 }, // кровь огненного тролля
+      { secret_id: 6, ingredient_id: 15 }, // листья дикого наперстянника
+      { secret_id: 6, ingredient_id: 40 }, // кусочек звёздного света
+      { secret_id: 6, ingredient_id: 14 }, // корень асфоделя
       { secret_id: 6, ingredient_id: 8 }, // пучок мандрагоры
-      { secret_id: 6, ingredient_id: 26 }, // эссенция ночного дождя
+      { secret_id: 6, ingredient_id: 31 }, // эссенция ночного дождя
 
       /* Potion of Shielding */
       { secret_id: 7, ingredient_id: 9 }, // зуб базилиска
-      { secret_id: 7, ingredient_id: 36 }, // лист устричного дерева
+      { secret_id: 7, ingredient_id: 42 }, // лист устричного дерева
       { secret_id: 7, ingredient_id: 2 }, // слёзы феникса
-      { secret_id: 7, ingredient_id: 25 }, // кровь жабы
-      { secret_id: 7, ingredient_id: 23 }, // пыльца фей
-      { secret_id: 7, ingredient_id: 21 }, // листья зеленого дуба
-      { secret_id: 7, ingredient_id: 27 }, // перо горного орла
+      { secret_id: 7, ingredient_id: 30 }, // кровь жабы
+      { secret_id: 7, ingredient_id: 28 }, // пыльца фей
+      { secret_id: 7, ingredient_id: 24 }, // листья зеленого дуба
+      { secret_id: 7, ingredient_id: 43 }, // перо горного орла
 
       /* Potion of Healing */
-      { secret_id: 8, ingredient_id: 19 }, // мох паучьего дерева
+      { secret_id: 8, ingredient_id: 22 }, // мох паучьего дерева
       { secret_id: 8, ingredient_id: 2 }, // слёзы феникса
       { secret_id: 8, ingredient_id: 8 }, // пучок мандрагоры
-      { secret_id: 8, ingredient_id: 30 }, // молоко медовой ночи
-      { secret_id: 8, ingredient_id: 20 }, // корень водяной феи
-      { secret_id: 8, ingredient_id: 13 }, // мох болотный
-      { secret_id: 8, ingredient_id: 7 }, // кровь огненного тролля
+      { secret_id: 8, ingredient_id: 36 }, // молоко медовой ночи
+      { secret_id: 8, ingredient_id: 23 }, // корень водяной феи
+      { secret_id: 8, ingredient_id: 16 }, // мох болотный
+      { secret_id: 8, ingredient_id: 32 }, // кровь огненного тролля
 
       /* Potion of Immortality */
-      { secret_id: 9, ingredient_id: 29 }, // проклятая кровь вампира
+      { secret_id: 9, ingredient_id: 35 }, // проклятая кровь вампира
       { secret_id: 9, ingredient_id: 9 }, // зуб базилиска
-      { secret_id: 9, ingredient_id: 7 }, // кровь огненного тролля
-      { secret_id: 9, ingredient_id: 10 }, // клыки змеи
-      { secret_id: 9, ingredient_id: 32 }, // паутинка акромантулы
-      { secret_id: 9, ingredient_id: 37 }, // экстракт из кракена
-      { secret_id: 9, ingredient_id: 24 }, // эссенция очного яблока
+      { secret_id: 9, ingredient_id: 32 }, // кровь огненного тролля
+      { secret_id: 9, ingredient_id: 7 }, // клыки змеи
+      { secret_id: 9, ingredient_id: 38 }, // паутинка акромантулы
+      { secret_id: 9, ingredient_id: 33 }, // экстракт из кракена
+      { secret_id: 9, ingredient_id: 26 }, // эссенция очного яблока
       { secret_id: 9, ingredient_id: 2 }, // слёзы феникса
-      { secret_id: 9, ingredient_id: 27 }, // перо горного орла
-      { secret_id: 9, ingredient_id: 38 }, // сироп с паучьей нити
+      { secret_id: 9, ingredient_id: 43 }, // перо горного орла
+      { secret_id: 9, ingredient_id: 34 }, // сироп с паучьей нити
 
       /* Potion of Prophecy */
-      { secret_id: 10, ingredient_id: 16 }, // плоды омелы
-      { secret_id: 10, ingredient_id: 26 }, // эссенция ночного дождя
-      { secret_id: 10, ingredient_id: 33 }, // капля дождя в полнолуние
+      { secret_id: 10, ingredient_id: 17 }, // плоды омелы
+      { secret_id: 10, ingredient_id: 31 }, // эссенция ночного дождя
+      { secret_id: 10, ingredient_id: 39 }, // капля дождя в полнолуние
       { secret_id: 10, ingredient_id: 9 }, // зуб базилиска
       { secret_id: 10, ingredient_id: 11 }, // туманное сало
-      { secret_id: 10, ingredient_id: 1 }, // корень асфоделя
-      { secret_id: 10, ingredient_id: 19 }, // мох паучьего дерева
-      { secret_id: 10, ingredient_id: 35 }, // сок хищного дерева
+      { secret_id: 10, ingredient_id: 14 }, // корень асфоделя
+      { secret_id: 10, ingredient_id: 22 }, // мох паучьего дерева
+      { secret_id: 10, ingredient_id: 27 }, // сок хищного дерева
       { secret_id: 10, ingredient_id: 8 } // пучок мандрагоры
     ]);
   },
