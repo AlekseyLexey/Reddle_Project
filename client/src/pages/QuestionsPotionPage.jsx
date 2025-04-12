@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import {
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  Button,
+  Box
+} from "@mui/material";
 // import { Link } from "react-router-dom";
 import potionsData from "../../../secrets.json";
 import ingredients from "../../../ingredients.json";
@@ -22,7 +31,7 @@ const QuestionsPotionPage = () => {
   const potion = allRiddles["1"];
 
   if (!potion) {
-    return <div>Зелье не найдено</div>;
+    return <Typography variant="h2">Зелье не найдено</Typography>;
   }
   useEffect(() => {
     if (potion.answer.length === answers.length) {
@@ -39,57 +48,95 @@ const QuestionsPotionPage = () => {
 
   return (
     <>
-      <a href="/">К ЗЕЛЬЯМ!</a>
-      <h5 style={{ backgroundColor: "#333", fontSize: "30px" }}>
-        {potion.riddle}
-      </h5>
-      <div style={{ backgroundColor: "#333", marginBottom: "30px" }}>
-        Собрано {answers.length} из {potion.answer.length} ингридиентов.
-      </div>
-      {!isSuccess ? (
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "20px",
-            alignItems: "center",
-            justifyContent: "center"
+      <Button
+        href="/"
+        variant="contained"
+        color="primary"
+        style={{ marginBottom: "20px" }}
+      >
+        К ЗЕЛЬЯМ!
+      </Button>
+      <Box
+        sx={{
+          position: "sticky",
+          top: "0",
+          left: "0",
+          color: "#000"
+        }}
+      >
+        <Typography
+          variant="h5"
+          sx={{
+            backgroundColor: "#FDDC5C",
+            padding: "10px"
           }}
         >
+          {potion.riddle}
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#FDDC5C",
+            marginBottom: "30px",
+            padding: "5px"
+          }}
+        >
+          Собрано {answers.length} из {potion.answer.length} ингредиентов.
+        </Typography>
+      </Box>
+
+      {!isSuccess ? (
+        <Grid container spacing={1} justifyContent="center">
           {allIngredients.map((ingr, i) => (
-            <div
-              style={{
-                display: "flex",
-                width: "200px",
-                minHeight: "50px",
-                cursor: "pointer",
-                backgroundColor: "#333",
-                borderRadius: "12px",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center"
-              }}
-              onClick={() =>
-                setAnswers((prev) => {
-                  return [...prev, ingr.name];
-                })
-              }
-              key={i}
-            >
-              {i + 1} {ingr.name}
-            </div>
+            <Grid item key={i}>
+              <Card
+                sx={{
+                  width: "200px",
+                  cursor: "pointer",
+                  backgroundColor: "#333",
+                  color: "#fff",
+                  borderRadius: "12px"
+                }}
+                onClick={() =>
+                  setAnswers((prev) => {
+                    return [...prev, ingr.name];
+                  })
+                }
+              >
+                <CardContent>
+                  <Typography variant="body1">
+                    {i + 1} {ingr.name}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
+        </Grid>
       ) : isSuccess === "Верно" ? (
-        <div>
-          <h4>ВЕРНО!</h4>
-          <img src={`/potion-images/${potion.image}`} alt="Potion" />
-        </div>
+        <Box textAlign="center">
+          <Typography variant="h3" sx={{ color: "green" }}>
+            ВЕРНО!
+          </Typography>
+          <img
+            src={`/potion-images/${potion.image}`}
+            alt="Potion"
+            sx={{ marginTop: "20px", maxWidth: "100%" }}
+          />
+        </Box>
       ) : (
-        <div style={{}}>
-          <h4>К сожалению нет(</h4>
-          <img src="failPotion.png" alt="FailImg" />
-        </div>
+        <Box textAlign="center">
+          <Typography variant="h3" sx={{ color: "red" }}>
+            К сожалению нет(((
+          </Typography>
+          <img
+            src="failPotion.png"
+            alt="FailImg"
+            sx={{ marginTop: "20px", maxWidth: "100%" }}
+          />
+        </Box>
       )}
     </>
   );
