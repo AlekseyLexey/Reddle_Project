@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
-  Container,
   Typography,
   Grid,
   Card,
@@ -9,14 +8,15 @@ import {
   Button,
   Box
 } from "@mui/material";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import potionsData from "../../../secrets.json";
 import ingredients from "../../../ingredients.json";
 
 const QuestionsPotionPage = () => {
   const [answers, setAnswers] = useState([]);
   const [isSuccess, setSuccess] = useState(null);
-  //   const { id } = useParams();
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   const { hard_riddles, medium_riddles, simple_riddles } = potionsData;
   const allRiddles = [...simple_riddles, ...medium_riddles, ...hard_riddles];
@@ -28,7 +28,7 @@ const QuestionsPotionPage = () => {
     ...data.unusual_additions
   ];
 
-  const potion = allRiddles["1"];
+  const potion = allRiddles[id];
 
   if (!potion) {
     return <Typography variant="h2">Зелье не найдено</Typography>;
@@ -49,7 +49,7 @@ const QuestionsPotionPage = () => {
   return (
     <>
       <Button
-        href="/"
+        onClick={() => navigate("/")}
         variant="contained"
         color="primary"
         style={{ marginBottom: "20px" }}

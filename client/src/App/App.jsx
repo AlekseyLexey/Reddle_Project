@@ -1,7 +1,7 @@
-import { useState } from "react";
-import PotionsPage from "../pages/PotionsPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import QuestionsPotionPage from "../pages/QuestionsPotionPage";
+import PotionsPage from "../pages/PotionsPage";
 
 function App() {
   return (
@@ -14,8 +14,12 @@ function App() {
         backgroundPosition: "center"
       }}
     >
-      <PotionsPage />
-      <QuestionsPotionPage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<PotionsPage />} />
+          <Route path="/riddle/:id" element={<QuestionsPotionPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
