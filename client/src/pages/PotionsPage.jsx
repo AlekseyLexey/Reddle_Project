@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import secrets from "../../../secrets.json";
+import fetchingData from "../services/api";
 
 function PotionsPage() {
-  const [potions, setPotions] = useState([
-    ...secrets.simple_riddles,
-    ...secrets.medium_riddles,
-    ...secrets.hard_riddles
-  ]);
+  const [potions, setPotions] = useState([]);
+
+  useEffect(() => {
+    fetchingData("api/secrets").then(setPotions);
+  }, []);
+
   console.log(potions);
 
   return (
